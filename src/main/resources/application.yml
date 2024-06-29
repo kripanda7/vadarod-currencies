@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: vadarod.task
+
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: user
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+      open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+    generate-ddl: false
